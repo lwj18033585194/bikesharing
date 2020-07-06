@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+import './api/basic'
+import './api/high'
+import './api/city'
+import './api/order/order'
+import './api/order/endOrder'
+import './api/order/finish_order'
+import './api/order/detail'
+import './api/map/bike_list'
+import './api/role/role_list'
+import './api/role/user_list'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <div>
+        {this.props.children}
+      </div>
+    )
+  }
 }
 
 export default App;

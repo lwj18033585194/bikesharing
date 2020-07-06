@@ -1,0 +1,27 @@
+@import './default.less';
+@import './loading.less';
+.container{
+    .nav-left{
+        height: calc(100vh);
+        background-color:#001529;
+    }
+    .main{
+        background:@colorL;
+        height: calc(100vh);
+        overflow: auto;
+        .content{
+            position: relative;
+            padding: 20px;
+        }
+    }
+
+}
+.content-wrap{
+    background:#fff;
+    border:1px solid #ebebe8;
+    margin-top:-2px;
+    .ant-table-wrapper{
+        margin-left:-1px;
+        margin-right:-2px;
+    }
+}

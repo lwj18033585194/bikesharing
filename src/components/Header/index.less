@@ -1,0 +1,52 @@
+@import '../../style//default.less';
+.header{
+    background-color:@colorM;
+    .header-top{
+        height:60px;
+        line-height:60px;
+        padding:0px 20px;
+        text-align:right;
+        a{
+            margin-left:40px;
+            text-decoration:none;
+        }
+    }
+    .breadcrumb{
+        height:40px;
+        line-height:40px;
+        padding:0 20px;
+        border-top:1px solid #f9c700;
+        .breadcrumb-title{
+            //面包削
+            text-align:center;
+            font-size:@fontC;
+            &::after{
+                position: absolute;
+                left:80px;
+                top:39px;
+                content:" ";
+                width: 10px;
+                height: 10px;
+                border-top: 10px solid #fff;
+                border-left: 10px solid transparent;
+                border-right:10px solid transparent;
+            }
+        }
+        .weather{
+            //天气时间
+            text-align:right;
+            vertical-align: middle;
+            .date{
+                margin-right:10px
+            }
+            .weather-img{
+                img{
+                    height:15px;
+                }
+            }
+            .weather-detail{
+                margin-left:5px;
+            }
+        }
+    }
+}
